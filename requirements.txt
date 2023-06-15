@@ -1,0 +1,10 @@
+django 
+djangorestframework
+pyodbc
+pandas
+azure-storage-blob
+azure-common==1.1.8
+azure-nspkg==2.0.0
+azure-storage-blob==0.37.1
+azure-storage-common==0.37.1
+azure-storage-nspkg==2.0.0

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+body {
+	background: #f6f5f7;
+	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+input {
+	background-color: #FFFFFF;
+	border: none;
+	padding: 12px 15px;
+	width: 80%;
+    border: none;
+    outline: 0;
+}
+
+input::placeholder {
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: #929292;
+  }
+
+nav{
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 20vw auto 25vw;
+}
+
+
+.logo_container{  
+    margin-left: 15px;
+    display: flex;
+	justify-content: left;
+	align-items: left;
+	flex-direction: column;
+}
+.logo_container>img{
+    height: 20%;
+    width: 20%;
+}
+
+svg{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+}
+
+.navbar_right_container{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.profile_img{
+    height: 40px;
+    width: 40px;
+}
+
+#nav_add_expense{
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: #1DC29F;
+    border-style: solid;
+    color: #1DC29F;
+   font-weight:600;
+    font-family: 'Montserrat';
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    outline: none;
+}
+
+#nav_add_expense:active{
+    border-style: outset;
+}
+
+.profile_img:hover{
+    cursor: pointer;
+}
+
+.searchbar_container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.dashboard_container{
+    display: grid;
+    grid-template-columns: 15vw auto;
+}
+.dashboard_left_container{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.dashboard_right_container{
+    background-color: #D8D8D8;
+    height: 100%;
+}
+
+.dashboard_left_menu{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.dashboard_left_menu a{
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #929292;
+    font-size: 1em;
+   
+    gap: 10px;
+}
+
+.dashboard_left_menu svg{
+    margin-top: 0px;
+    filter: invert(65%) sepia(0%) saturate(0%) hue-rotate(237deg) brightness(90%) contrast(89%);
+}
+
+.dashboard_left_menu a.active {
+    color: #1DC29F;
+    
+    box-shadow: inset -8px 0px 0px #1DC29F;
+  }
+
+  .dashboard_left_menu a.active svg{
+    filter: invert(52%) sepia(94%) saturate(377%) hue-rotate(117deg) brightness(102%) contrast(87%);
+  }
+
+  .dashboard_left_menu a:hover{
+    background: #ddd;
+    color: black;
+  }
+
+  .dashboard_left_menu a:hover svg{
+    filter: invert(0%) sepia(1%) saturate(4%) hue-rotate(320deg) brightness(97%) contrast(104%);
+  }
+
+  .dasboard_right_container_inner{
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  
+  .dasboard_right_container_inner h3{
+    font-family:'Montserrat';
+    font-size: 20px;
+    font-weight:bold;
+  }
+
+  .dashboard_right_summary_card{
+    background-color: #FFFFFF;
+    border-radius: 8px;  
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard_right_summary_card:first-of-type{
+    margin-top: -50px;
+}
+
+.card_content{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card_title h4{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.summary_card_col_title{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #929292;
+}
+
+.summary_card_col:not(:last-child) {
+    border-right: 2px solid #929292;
+    padding-right: 60px;
+}
+
+.friend_summary{
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.friend_summary #name{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.friend_summary #amount{
+    margin-top: 5px;
+   margin-left: 30px;
+}
+
+.viewall{
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.viewall a{
+    text-decoration: none;
+    color: #929292;
+}
